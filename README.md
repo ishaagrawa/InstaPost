@@ -25,7 +25,7 @@ Welcome to **InstaPost**, a platform where users can create, edit, and share pos
 ### Backend Setup (Completed)
 1. **Clone the repository**:
     ```bash
-    git clone https://github.com/yourusername/InstaPost.git
+    git clone https://github.com/ishaagrawa/InstaPost.git
     ```
 
 2. **Navigate to the project directory**:
