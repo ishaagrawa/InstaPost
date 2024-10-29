@@ -1,7 +1,7 @@
 import React from 'react'
 import {Container, Logo, LogoutBtn} from '../index'
 import { Link } from 'react-router-dom'
-import { useSelector } from 'react-redux'
+import {useSelector} from 'react-redux'
 import { useNavigate } from 'react-router-dom'
 
 function Header() {
@@ -35,13 +35,16 @@ function Header() {
       active: authStatus,
   },
   ]
+
+
   return (
    <header className='py-3 shadow bg-gray-500'>
     <container>
       <nav className='flex'>
         <div className='mr-4'>
           <Link to='/'>
-          <Logo width='70px'/> 
+          <Logo width='70px'   /> 
+
           </Link>
         </div>
         <ul className='flex ml-auto'>
@@ -50,15 +53,14 @@ function Header() {
             <li key={item.name}>
               <button
               onClick={() => navigate(item.slug)}
-              className='inline-block px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
-              >{item.name}
-              </button>
+                className='inline-bock px-6 py-2 duration-200 hover:bg-blue-100 rounded-full'
+              >{item.name}</button>
             </li>
-          ): null
+          ) : null
           )}
           {authStatus && (
             <li>
-              <LogoutBtn/>
+              <LogoutBtn />
             </li>
           )}
         </ul>
