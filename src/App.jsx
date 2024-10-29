@@ -28,7 +28,7 @@ useEffect(() =>{
       <div className='w-full block'>
       <Header/>
       <main>
-      Todo: {/* <outlet/> */}
+      Todo: <Outlet/>
       </main>
       <Footer/>
       </div>
