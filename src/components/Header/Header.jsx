@@ -39,11 +39,11 @@ function Header() {
 
   return (
    <header className='py-3 shadow bg-gray-500'>
-    <container>
+    <Container>
       <nav className='flex'>
         <div className='mr-4'>
           <Link to='/'>
-          <Logo width='70px'   /> 
+          <Logo width='70px'/> 
 
           </Link>
         </div>
@@ -65,7 +65,7 @@ function Header() {
           )}
         </ul>
       </nav>
-    </container>
+    </Container>
    </header>
   )
 }
